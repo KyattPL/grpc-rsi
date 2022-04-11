@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/GrpcServer.csproj": {}
+  },
+  "projects": {
+    "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/GrpcServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/GrpcServer.csproj",
+        "projectName": "GrpcServer",
+        "projectPath": "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/GrpcServer.csproj",
+        "packagesPath": "/home/kyatt/.nuget/packages/",
+        "outputPath": "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kyatt/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.40.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

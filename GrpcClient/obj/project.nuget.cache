@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "0GLqTpaq/f+YDOsFs3IYUz1D7K8+a0JZqcaJTC4K7YCoxM4dRjEphu1++GkhSiWu9EyljFOgdGoIDdlYE9hzpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\GrpcClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\siema\\.nuget\\packages\\google.protobuf\\3.20.1-rc1\\google.protobuf.3.20.1-rc1.nupkg.sha512",
+    "C:\\Users\\siema\\.nuget\\packages\\grpc.core.api\\2.45.0\\grpc.core.api.2.45.0.nupkg.sha512",
+    "C:\\Users\\siema\\.nuget\\packages\\grpc.net.client\\2.45.0-pre1\\grpc.net.client.2.45.0-pre1.nupkg.sha512",
+    "C:\\Users\\siema\\.nuget\\packages\\grpc.net.common\\2.45.0-pre1\\grpc.net.common.2.45.0-pre1.nupkg.sha512",
+    "C:\\Users\\siema\\.nuget\\packages\\grpc.tools\\2.45.0\\grpc.tools.2.45.0.nupkg.sha512",
+    "C:\\Users\\siema\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\siema\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

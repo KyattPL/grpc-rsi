@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package exercise;
+
+service Exercise {
+  rpc SendStudentData (StudentDataModel) returns (Status);
+  rpc GetStudentData (GetStudentDataRequest) returns (StudentDataModel);
+
+  rpc UploadImage (stream ImageChunk) returns (Status);
+  rpc DownloadImage (DownloadImageRequest) returns (stream ImageChunk);
+}
+
+message StudentDataModel {
+  int32 index = 1;
+  string firstName = 2;
+  string lastName = 3;
+}
+
+message GetStudentDataRequest {
+  int32 index = 1;
+}
+
+message Status {
+  string message = 1;
+}
+
+message DownloadImageRequest {
+
+}
+
+message ImageChunk {
+  bytes data = 1;
+}
