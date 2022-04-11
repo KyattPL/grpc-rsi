@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0GLqTpaq/f+YDOsFs3IYUz1D7K8+a0JZqcaJTC4K7YCoxM4dRjEphu1++GkhSiWu9EyljFOgdGoIDdlYE9hzpA==",
+  "dgSpecHash": "thI0uSHzMbppo2pbGS/eMLuGIvOfzhLCmechQzhPpltqOtJplic+dPnYaeH3Weealf68i2c9ttZVs7kUCtlqGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\GrpcClient.csproj",
+  "projectFilePath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcClient\\GrpcClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\siema\\.nuget\\packages\\google.protobuf\\3.20.1-rc1\\google.protobuf.3.20.1-rc1.nupkg.sha512",
     "C:\\Users\\siema\\.nuget\\packages\\grpc.core.api\\2.45.0\\grpc.core.api.2.45.0.nupkg.sha512",

@@ -648,24 +648,30 @@
     ]
   },
   "packageFolders": {
-    "/home/kyatt/.nuget/packages/": {}
+    "C:\\Users\\siema\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/GrpcServer.csproj",
+      "projectUniqueName": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcServer\\GrpcServer.csproj",
       "projectName": "GrpcServer",
-      "projectPath": "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/GrpcServer.csproj",
-      "packagesPath": "/home/kyatt/.nuget/packages/",
-      "outputPath": "/home/kyatt/Desktop/uczelnia/RSI/lista3/GrpcApp/GrpcServer/obj/",
+      "projectPath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcServer\\GrpcServer.csproj",
+      "packagesPath": "C:\\Users\\siema\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/kyatt/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\siema\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -707,7 +713,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

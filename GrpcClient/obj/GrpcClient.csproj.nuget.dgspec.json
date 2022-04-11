@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\GrpcClient.csproj": {}
+    "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcClient\\GrpcClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\GrpcClient.csproj": {
+    "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcClient\\GrpcClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\GrpcClient.csproj",
+        "projectUniqueName": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcClient\\GrpcClient.csproj",
         "projectName": "GrpcClient",
-        "projectPath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\GrpcClient.csproj",
+        "projectPath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcClient\\GrpcClient.csproj",
         "packagesPath": "C:\\Users\\siema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\GrpcApp\\GrpcClient\\obj\\",
+        "outputPath": "C:\\Users\\siema\\Desktop\\uczelnia\\RSI\\grpc-rsi\\GrpcClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -52,6 +52,8 @@
               "version": "[2.45.0-pre1, )"
             },
             "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.45.0, )"
             }

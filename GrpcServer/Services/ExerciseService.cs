@@ -5,22 +5,22 @@ namespace GrpcServer.Services
 {
     public class ExerciseService : Exercise.ExerciseBase
     {
-        private List<StudentDataModel> students;
+        private static List<StudentDataModel> students = new List<StudentDataModel>();
         private readonly ILogger<ExerciseService> _logger;
         public ExerciseService(ILogger<ExerciseService> logger)
         {
             _logger = logger;
-            students = new List<StudentDataModel>();
         }
 
         public override Task<Status> SendStudentData(StudentDataModel request, Grpc.Core.ServerCallContext context)
         {
             students.Add(request);
-            return new Status { Message = "OK" };
+            return Task.FromResult(new Status { Message = "OK" });
         }
 
-        public override Task<StudentDataModel> GetStudentData(GetStudentDataRequest request, Grpc.Core.ServerCallContext context)
+        public override async Task<StudentDataModel> GetStudentData(GetStudentDataRequest request, Grpc.Core.ServerCallContext context)
         {
+            await Task.Delay(1000);
             int indexToFind =  request.Index;
             foreach (var stud in students) {
                 if (stud.Index == indexToFind) {
@@ -32,13 +32,19 @@ namespace GrpcServer.Services
 
         public override async Task<Status> UploadImage(Grpc.Core.IAsyncStreamReader<ImageChunk> requestStream, Grpc.Core.ServerCallContext context)
         {
-            await requestStream.ReadAsync();
-            return new Status { Message = "OK" };
+            await requestStream.MoveNext();
+            var byteArr = requestStream.Current.Data.ToArray();
+            await System.IO.File.WriteAllBytesAsync("./uploaded.png", byteArr);
+            return await Task.FromResult(new Status { Message = "OK" });
         }
 
         public override async Task DownloadImage(DownloadImageRequest request, Grpc.Core.IServerStreamWriter<ImageChunk> responseStream, Grpc.Core.ServerCallContext context)
-        {   
-            await responseStream.WriteAsync();
+        {
+            var byteArr = await System.IO.File.ReadAllBytesAsync("./uploaded.png");
+            foreach (var singleByte in byteArr)
+            {
+                await responseStream.WriteAsync(new ImageChunk { Data = Google.Protobuf.ByteString.CopyFrom(singleByte) });
+            }
         }
     }
 }
